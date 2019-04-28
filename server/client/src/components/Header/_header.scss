@@ -1,0 +1,35 @@
+.header {
+    font-family: $font-family;
+    background: linear-gradient(295deg, #303ab2, #9de89f);
+    padding-bottom: 40px;
+
+    &__intro {
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        img {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__form {
+            border: 1px solid $white;
+            padding: 15px;
+    }
+
+    @media screen and (min-width: 500px) {
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 15px;
+            margin: auto;
+        }
+        &__form {
+            margin-top: 90px;
+        }
+    }
+}

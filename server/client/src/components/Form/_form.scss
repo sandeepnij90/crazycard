@@ -1,0 +1,96 @@
+.form {
+    h2 {
+        margin-top:0;
+    }
+    input, button {
+        font-family:'Source Sans Pro', sans-serif
+    }
+
+    .personal {
+        max-width: 400px;
+        display: grid;
+        width: 100%;
+        input {
+            padding: 11px 15px;
+            border-radius: 3px;
+            border: 1px solid $white;
+            font-size: 16px;
+            &.error {
+            border: 3px solid $error;
+            }
+        }
+        label{
+            font-weight: 600;
+        }
+        &__name{
+            display: grid;
+            grid-row-gap: 15px;
+            input {
+                max-width: 320px;
+            }
+        }
+
+        &__dob {
+            margin-top: 15px;
+            .dates {
+                margin-top: 15px;
+                display: grid;
+                grid-template-columns: 60px 60px 70px;
+                grid-column-gap: 15px;
+            }
+        }
+
+        &__address {
+            margin-top: 15px;
+            display: grid;
+            grid-row-gap: 15px;
+            &__housenumber {
+                width: 60px;
+            }
+            &__postcode {
+                width: 120px;
+            }
+            &__street, &__town {
+                max-width: 320px;
+            }
+        }
+
+        &__finance {
+            display: grid;
+            margin-top: 15px;
+            grid-column-gap: 15px;
+            justify-content: center;
+            label:first-child {
+                margin-bottom: 15px;
+            }
+            
+            input {
+                width: 120px;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    &__button {
+        padding: 15px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: $button-color;
+        color: $white;
+        font-weight: 600;
+        border: 0;
+        cursor: pointer; 
+        &:disabled {
+            background-color: $grey;
+            color: #000000;
+            cursor: default;
+        }
+    }
+
+    .field-error {
+        color: $error;
+        display: block;
+    }
+}

@@ -1,0 +1,2 @@
+export const UPDATE_USER_DETAILS = 'UPDATE_USER_DETAILS';
+export const GET_CARDS = 'GET_CARDS';

@@ -1,0 +1,27 @@
+.option {
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin:0;
+
+        li {
+            cursor: pointer;
+            display: inline-block;
+            background-color: $white;
+            border: 1px solid $grey;
+        
+            margin-right: 15px;
+            margin-bottom: 15px;
+            padding: 9px;
+            border-radius: 4px;
+            transition: 0.7s;
+            &:hover {
+                border-color: $option-active;
+            }
+            &.active {
+                background-color: $option-active;
+                color: $white;
+            }
+        }
+    }
+}
