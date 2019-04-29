@@ -13,8 +13,6 @@ module.exports = app => {
         }
         if (income > 16000) {
             const card = await Cards.findOne({ cardKey: 2})
-            console.log(card)
-
             cards.push(card)
         }
 
